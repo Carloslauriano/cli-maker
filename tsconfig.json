@@ -1,0 +1,25 @@
+{
+  "exclude":["node_modules","dist"],
+  "compilerOptions": {
+    "strict": true,
+    "module": "CommonJS",
+    "target": "ESNext",
+    "lib":["ESNext"],
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "declaration": true,
+    "moduleDetection":"force"
+  }
+}
