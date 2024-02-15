@@ -1,1 +1,1 @@
-export { cliMaker } from "./classes";
+export { cliMaker } from "./classes"
