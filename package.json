@@ -1,11 +1,16 @@
 {
-  "name": "cli-maker",
+  "name": "@carloslauriano/cli-maker",
   "version": "0.0.0",
   "main": "dist/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Carloslauriano/cli-maker.git"
+  },
   "scripts": {
     "dev": "webpack --watch --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "release": "yarn build && semantic-release"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
@@ -18,7 +23,13 @@
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.90.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "semantic-release": "^23.0.0"
   },
   "config": {
     "commitizen": {
