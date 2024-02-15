@@ -1,7 +1,7 @@
 {
   "name": "cli-maker",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "dev": "webpack --watch --mode development",
