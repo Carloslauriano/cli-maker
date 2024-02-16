@@ -30,7 +30,7 @@
     [
       "@semantic-release/release-notes-generator",
       {
-        "preset": "angular",
+        "preset": "conventionalcommits",
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
         }
@@ -41,6 +41,54 @@
     "@semantic-release/npm",
     {
       "path": "@semantic-release/git",
+      "presetConfig": {
+        "types": [
+          {
+            "type": "feat",
+            "section": ":sparkles: Features",
+            "hidden": false
+          },
+          {
+            "type": "fix",
+            "section": ":bug: Fixes",
+            "hidden": false
+          },
+          {
+            "type": "docs",
+            "section": ":memo: Documentation",
+            "hidden": false
+          },
+          {
+            "type": "style",
+            "section": ":barber: Styling",
+            "hidden": false
+          },
+          {
+            "type": "refactor",
+            "section": ":zap: Refactoring",
+            "hidden": false
+          },
+          {
+            "type": "perf",
+            "section": ":fast_forward: Performance",
+            "hidden": false
+          },
+          {
+            "type": "test",
+            "section": ":white_check_mark: Tests",
+            "hidden": false
+          },
+          {
+            "type": "ci",
+            "section": ":repeat: CI",
+            "hidden": false
+          },
+          {
+            "type": "chore",
+            "hidden": true
+          }
+        ]
+      },
       "assets": [
         "package.json",
         "CHANGELOG.md"
