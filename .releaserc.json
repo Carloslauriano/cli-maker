@@ -20,8 +20,7 @@
       "assets": [
         "package.json",
         "CHANGELOG.md"
-      ],
-      "message": "chore(release): <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]\n\n<%= nextRelease.notes %>"
+      ]
     }
   ],
   "branches": [
