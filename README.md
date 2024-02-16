@@ -12,9 +12,36 @@ const cli = new cliMaker();
 
 cli.registerCommand({
   comand: 'hello',
+  alias:'h'
 },
 ()=>{
   console.log('world');
 })
 
 ```
+
+```
+
+customCli hello
+
+-> world
+
+```
+
+or
+
+```
+
+customCli h
+
+-> world
+
+```
+
+# Contributors
+
+<a href="https://github.com/Carloslauriano/cli-maker/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Carloslauriano/cli-maker" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
